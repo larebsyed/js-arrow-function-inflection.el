@@ -1,5 +1,9 @@
 # js-arrow-function-inflection.el
-The package provides a couple of function to convert javascript es6 arrow function to normal functions and vice versa. Most of time when developing a react or javascript application you realize that you need an es6 arrow function instead of simple js function. Changing a simple function to arrow function is an easy task but still one can save a few keystrokes by automating it. This package provides that automation. 
+The package provides a couple of function to convert javascript es6 arrow function to normal functions and vice versa. 
+
+**Motivation**
+
+Most of time when developing a react or javascript application you realize that you need an es6 arrow function instead of simple js function. Changing a simple function to arrow function is an easy task but still one can save a few keystrokes by automating it. This package provides that automation. 
 
 The package provides * `js-arrow-function-inflections`
 It provides access to three functions
