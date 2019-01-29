@@ -64,7 +64,7 @@
   (save-excursion
     (unless (save-excursion
               (re-search-forward "\\(const\\|var\\|let\\)?\s*\\w*\s*\\(=\s*\\)?\\((\\).*\\()\\)\s*\\(\s*=>\s*\\)" (line-end-position) t))
-      (if (re-search-forward "\\(function\\)?\\(\s*\\w*\s*(\\)?.*\\()\s*\\){" (line-end-position) t)
+      (if (re-search-forward "\\(function\\)?\\(\s*\\w*\s*(\\)?.*\\()\s*\\)" (line-end-position) t)
           (progn (cond ((match-string 1)
                         (replace-match "const" nil nil nil 1)))
                  (cond ((and (match-string 2)
