@@ -69,7 +69,7 @@
                         (replace-match "const" nil nil nil 1)))
                  (cond ((and (match-string 2)
                              (string-match-p  "\\w\s*("  (match-string 2)))
-                        (replace-match (replace-regexp-in-string "(" "= (" (match-string 2)) nil nil nil 2)))
+                        (replace-match (replace-regex-in-string "(" "= (" (match-string 2)) nil nil nil 2)))
                  (replace-match ") => " nil nil nil 3)
                  t)
         nil))))
@@ -98,7 +98,7 @@
 ;;;###autoload
 (defun js-arrow-function-inflection-toggle ()
   "Toggle between Arrow function and normal javascript function"
-  (interactive "P")
+  (interactive)
   (cond ((js-arrow-function-inflection-convert-to-arrow-function) t)
         ((js-arrow-function-inflection-convert-to-function) t)
         (t nil)
