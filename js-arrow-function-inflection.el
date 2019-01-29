@@ -49,6 +49,7 @@
 ;; Used to toggle between the two forms of function in javascript es6
 ;;; Code:
 
+;;;###autoload
 (defun js-arrow-function-inflection-convert-to-arrow-function ()
   "\ Interactively convert the simple function to arrow function
      The function matches the current line and tries to find a pattern like \"()={\"
@@ -73,7 +74,7 @@
                  t)
         nil))))
 
-
+;;;###autoload
 (defun js-arrow-function-inflection-convert-to-function ()
   "\ Interactively convert the simple function to arrow function
      The function matches the current line and tries to find a pattern like \"()={\"
@@ -94,6 +95,7 @@
                          t
                          ))))
 
+;;;###autoload
 (defun js-arrow-function-inflection-toggle ()
   "Toggle between Arrow function and normal javascript function"
   (interactive "P")
