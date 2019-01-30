@@ -69,7 +69,7 @@
                         (replace-match "const" nil nil nil 1)))
                  (cond ((and (match-string 2)
                              (string-match-p  "\\w\s*("  (match-string 2)))
-                        (replace-match (replace-regex-in-string "(" "= (" (match-string 2)) nil nil nil 2)))
+                        (replace-match (replace-regexp-in-string "(" "= (" (match-string 2)) nil nil nil 2)))
                  (replace-match ") => " nil nil nil 3)
                  t)
         nil))))
